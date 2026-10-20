@@ -1,0 +1,41 @@
+/* Généré par Claude (IA) - fichier réécrit de zéro : variables, police, base de page */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Généré par Claude (IA) - couleurs et réglages communs à tout le site */
+:root {
+    --fond: #eef3f8;
+    --texte: #1f2d3d;
+    --nav: #1f2d3d;
+    --nav-lien: #2f4257;
+    --primaire: #2f80c9;
+    --primaire-fonce: #1f649f;
+    --danger: #d64545;
+    --danger-fonce: #b23333;
+    --bordure: #cfd8e3;
+    --rayon: 10px;
+    --ombre: 0 4px 14px rgba(31, 45, 61, 0.12);
+}
+
+/* Généré par Claude (IA) - base de la page */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--fond);
+    color: var(--texte);
+    margin: 0;
+    padding: 0 0 40px;
+    line-height: 1.5;
+}
+
+h2 {
+    color: var(--texte);
+}
+
+/* Généré par Claude (IA) - texte centré (titres et messages) */
+.texte-centre {
+    text-align: center;
+    margin: 24px 16px;
+}

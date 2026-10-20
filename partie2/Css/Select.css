@@ -1,0 +1,27 @@
+/* Généré par Claude (IA) - fichier réécrit de zéro : page avec le gros bouton "Afficher les cartes" */
+.texte-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 0;
+}
+
+/* Généré par Claude (IA) - gros bouton */
+.texte-centre a {
+    display: inline-block;
+    padding: 18px 44px;
+    background-color: var(--primaire);
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: var(--ombre);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.texte-centre a:hover {
+    background-color: var(--primaire-fonce);
+    transform: translateY(-3px);
+}

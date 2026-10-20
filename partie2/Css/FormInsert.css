@@ -1,0 +1,83 @@
+/* Généré par Claude (IA) - fichier réécrit de zéro : formulaire d'ajout de carte */
+.tabbed-form {
+    background-color: white;
+    width: 92%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 28px;
+    border-radius: var(--rayon);
+    box-shadow: var(--ombre);
+}
+
+.tabbed-form h2 {
+    text-align: center;
+    margin: 0 0 24px;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+/* Généré par Claude (IA) - champs alignés en colonne (les <br> sont inutiles ici) */
+.tabbed-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.tabbed-form br {
+    display: none;
+}
+
+/* [AJOUTÉ] Claude (IA) - étiquettes collées à leur champ */
+.tabbed-form label {
+    margin-bottom: -8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+/* Généré par Claude (IA) - champs de saisie */
+.tabbed-form input[type="number"],
+.tabbed-form input[type="date"],
+.tabbed-form input[type="text"],
+.tabbed-form input[type="password"] { /* [MODIFIÉ] Claude (IA) - ajout des champs texte et mot de passe (Connexion / Inscription) */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--bordure);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--texte);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.tabbed-form input[type="number"]:focus,
+.tabbed-form input[type="date"]:focus,
+.tabbed-form input[type="text"]:focus,
+.tabbed-form input[type="password"]:focus { /* [MODIFIÉ] Claude (IA) - idem pour le focus */
+    outline: none;
+    border-color: var(--primaire);
+    box-shadow: 0 0 0 3px rgba(47, 128, 201, 0.25);
+}
+
+/* Généré par Claude (IA) - bouton d'envoi */
+.tabbed-form input[type="submit"] {
+    margin-top: 8px;
+    padding: 13px;
+    background-color: var(--primaire);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tabbed-form input[type="submit"]:hover {
+    background-color: var(--primaire-fonce);
+}
+
+.tabbed-form input[type="submit"]:focus-visible {
+    outline: 3px solid rgba(47, 128, 201, 0.4);
+    outline-offset: 2px;
+}

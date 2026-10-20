@@ -1,0 +1,69 @@
+/* Généré par Claude (IA) - fichier réécrit de zéro : barre de navigation */
+.SwitcherPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 12px 16px;
+    background-color: var(--nav);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 32px;
+}
+
+.SwitcherPage a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Généré par Claude (IA) - boutons de la navigation */
+.link_to_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+    min-height: 48px;
+    padding: 8px 20px;
+    background-color: var(--nav-lien);
+    border-radius: var(--rayon);
+    text-align: center;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.link_to_page:hover {
+    background-color: var(--primaire);
+    transform: translateY(-2px);
+}
+
+.link_to_page p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Généré par Claude (IA) - version avec images (page d'accueil) */
+.link_to_page:has(img) {
+    background-color: white;
+    padding: 4px 10px;
+    min-width: 0;
+}
+
+.link_to_page:has(img):hover {
+    background-color: #e3f1fb;
+}
+
+.link_to_page img {
+    display: block;
+    height: 70px;
+    width: auto;
+}
+
+/* Généré par Claude (IA) - petits écrans */
+@media (max-width: 600px) {
+    .link_to_page {
+        min-width: 140px;
+    }
+    .link_to_page img {
+        height: 56px;
+    }
+}

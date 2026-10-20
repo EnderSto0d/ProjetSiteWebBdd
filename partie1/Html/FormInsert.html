@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Skipass</title>
+        <link rel="stylesheet" href="../Css/ambient.css"> <!-- LIGNE AJOUTÉE -->
+        <link rel="stylesheet" href="../Css/FormInsert.css">
+        <link rel="stylesheet" href="../Css/SwitchPage.css">
+    </head>
+
+    <body>
+        <div class="SwitcherPage">
+            <a href="Home.html">
+                <div class="link_to_page" >
+                    <p>Accueil !!!</p>
+                </div>
+            </a>
+            <a href="FormInsert.html">
+            <div class="link_to_page" >
+                <p>Inserer une nouvelle carte !</p>
+            </div>
+            </a>
+            <a href="../PHP/ScriptAffiche.php">
+            <div class="link_to_page" >
+                <p>Affichage des Cartes</p>
+            </div>
+            </a>
+        </div>
+        
+        <section class="tabbed-form">
+            <h2 id = "Title Form Carte">Entrer les informations de <br> la carte à insérer
+            </h2>
+            <form action="../PHP/ScriptInsert.php" method="POST">
+                <input type="number" name="Id_carte" placeholder="Numéros de la carte">
+                <br>
+                <input type="Date" name="Date_Start" placeholder="Date de début de validité">
+                <br>
+                <input type="Date" name="Date_End" placeholder="Date de fin de validité">
+                <br>
+                <input type="submit" name="Envoyer" value="Submit">
+            </form>
+        </section>
+    </body>
+</html>

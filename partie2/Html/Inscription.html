@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Inscription Skipass</title>
+        <link rel="stylesheet" href="../Css/ambient.css">
+        <link rel="stylesheet" href="../Css/SwitchPage.css">
+        <link rel="stylesheet" href="../Css/FormInsert.css">
+        <link rel="stylesheet" href="../Css/Auth.css">
+    </head>
+    <body>
+        <div class="SwitcherPage">
+            <a href="Home.html">
+                <div class="link_to_page" >
+                    <p>Accueil !!!</p>
+                </div>
+            </a>
+            <a href="FormInsert.html">
+            <div class="link_to_page" >
+                <p>Inserer une nouvelle carte !</p>
+            </div>
+            </a>
+            <a href="../PHP/ScriptAffiche.php">
+            <div class="link_to_page" >
+                <p>Affichage des Cartes</p>
+            </div>
+            </a>
+        </div>
+        <section class="tabbed-form auth">
+            <h2 id = "Title Form Carte">Créer un compte</h2>
+            <form action="../PHP/ScriptInscription.php" method="POST">
+                <label for="Nom">Nom</label>
+                <input type="text" id="Nom" name="Nom" placeholder="Votre Nom" autocomplete="family-name" required>
+                <br>
+                <label for="Prenom">Prénom</label>
+                <input type="text" id="Prenom" name="Prenom" placeholder="Votre Prenom" autocomplete="given-name" required>
+                <br>
+                <label for="Login">Identifiant</label>
+                <input type="text" id="Login" name="Login" placeholder="Identifiant de connexion" autocomplete="username" required>
+                <br>
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="Votre mot de passe" autocomplete="new-password" required>
+                <br>
+                <input type="submit" name="Inscription" value="Créer mon compte">
+            </form>
+            <p class="auth-lien">Déjà un compte ? <a href="Connexion.html">Se connecter</a></p>
+        </section>
+    </body>
+</html>

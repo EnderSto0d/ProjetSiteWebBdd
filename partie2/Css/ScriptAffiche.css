@@ -1,0 +1,87 @@
+/* Généré par Claude (IA) - fichier réécrit de zéro : tableau des cartes */
+table {
+    width: 92%;
+    max-width: 1000px;
+    margin: 24px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: var(--rayon);
+    box-shadow: var(--ombre);
+    overflow: hidden;
+}
+
+/* Généré par Claude (IA) - toutes les cellules sont des <th> dans le PHP : la 1re ligne sert d'en-tête */
+th {
+    padding: 14px 12px;
+    text-align: center;
+    font-weight: 400;
+    border-bottom: 1px solid #e3e9f0;
+}
+
+tr:first-child th {
+    background-color: var(--nav);
+    color: white;
+    font-weight: 700;
+    border-bottom: none;
+}
+
+/* Généré par Claude (IA) - lignes alternées et survol */
+tr:nth-child(even) th {
+    background-color: #f6f9fc;
+}
+
+tr:not(:first-child):hover th {
+    background-color: #e3f1fb;
+}
+
+/* [AJOUTÉ] Claude (IA) - champs de date modifiables dans le tableau, alignés sur les autres champs du site */
+table input[type="date"] {
+    padding: 8px 10px;
+    border: 1px solid var(--bordure);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--texte);
+    background-color: white;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+table input[type="date"]:focus {
+    outline: none;
+    border-color: var(--primaire);
+    box-shadow: 0 0 0 3px rgba(47, 128, 201, 0.25);
+}
+
+/* Généré par Claude (IA) - bouton Supprimer */
+table form {
+    margin: 0;
+}
+
+table input[type="submit"] {
+    padding: 8px 14px;
+    background-color: var(--danger);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+table input[type="submit"]:hover {
+    background-color: var(--danger-fonce);
+}
+
+/* Généré par Claude (IA) - petits écrans */
+@media (max-width: 600px) {
+    /* [AJOUTÉ] Claude (IA) - le tableau défile horizontalement au lieu de déborder de l'écran */
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    th {
+        padding: 10px 6px;
+        font-size: 0.85rem;
+    }
+}
